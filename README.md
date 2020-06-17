@@ -33,7 +33,7 @@ Homework for Spring MVC Basics
 }
 ```
 
-若注册成功则返回200,无响应体
+若注册成功则返回201,无响应体
 
 ### 登录
 登录接口：`GET http://localhost:8080/login`
@@ -60,7 +60,7 @@ Homework for Spring MVC Basics
 }
 ```
 
-若登录成功则返回用户信息
+若登录成功则返回200，以及所有用户信息
 
 ## 作业要求
 
