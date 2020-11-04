@@ -15,6 +15,7 @@ public class UserService {
         if (users.stream().anyMatch(item -> item.getUsername().equals(user.getUsername()))) {
             throw new ExistedException("用户名已存在");
         }
+        user.setId(users.size()+1);
         users.add(user);
     }
 }

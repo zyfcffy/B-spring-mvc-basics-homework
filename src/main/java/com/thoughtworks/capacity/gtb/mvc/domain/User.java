@@ -13,6 +13,7 @@ import javax.validation.constraints.Pattern;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
+    private Integer id;
     @NotEmpty(message = "用户名不能为空")
     @Length(min = 3, max = 10, message = "用户名长度必须为3到10位")
     @Pattern(regexp = "^\\w+$", message = "用户名只能包含数字、字母和下划线")
